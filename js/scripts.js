@@ -1,3 +1,4 @@
+//list of pokemon
 let pokemonList = [
     {name: 'Bulbasaur',
     pokedexNumber: 1,
@@ -54,3 +55,13 @@ let pokemonList = [
     type: ['water']
     }
 ]
+//list all pokemon's pokedex number, name and height
+for (let i = 0; i < pokemonList.length; i++) {
+    document.write("#" + pokemonList[i].pokedexNumber + " " + pokemonList[i].name + " ");
+ //creates conditional that if a pokemon is a certain height a phrase will be added on
+    if (pokemonList[i].height >= 1.5) {
+        document.write("(height: " + pokemonList[i].height + ") - Wow that's big!</br>")
+    }
+    else if (pokemonList[i].height < 1.5)
+        document.write("(height: " + pokemonList[i].height + ")</br>")
+};
