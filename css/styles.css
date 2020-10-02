@@ -1,6 +1,6 @@
 body {
     background-color: #fc2c03;
-    font: 'Play', display;
+    font-family: 'Play', sans-serif;
     color: #e5e5e5;
     display: flex;
     margin: auto;
