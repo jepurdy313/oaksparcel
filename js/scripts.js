@@ -55,13 +55,18 @@ let pokemonList = [
     type: ['water']
     }
 ]
-//list all pokemon's pokedex number, name and height
-for (let i = 0; i < pokemonList.length; i++) {
-    document.write("#" + pokemonList[i].pokedexNumber + " " + pokemonList[i].name + " ");
- //creates conditional that if a pokemon is a certain height a phrase will be added on
-    if (pokemonList[i].height >= 1.5) {
-        document.write("(height: " + pokemonList[i].height + ") - Wow that's big!</br>")
+
+//creates a new function that calls and accesses the pokemonList to get information
+function pokemon(pokemonList) {
+    //writes the pokemon's pokedex number and name
+    document.write("#" + pokemonList.pokedexNumber + " " + pokemonList.name + " ");
+    //creates a if-else-if statement that changes based on a pokemon height, and finishes writing to DOM
+    if (pokemonList.height >= 1.5) {
+        document.write("(height: " + pokemonList.height + ") - Wow that's big!</br>")
     }
-    else if (pokemonList[i].height < 1.5)
-        document.write("(height: " + pokemonList[i].height + ")</br>")
-};
+    else if (pokemonList.height < 1.5)
+        document.write("(height: " + pokemonList.height + ")</br>")
+}
+
+//executes a forEach function using the paramater to call upon the pokemon function
+pokemonList.forEach(pokemon)
