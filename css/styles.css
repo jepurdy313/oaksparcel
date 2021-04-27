@@ -1,12 +1,26 @@
 body {
-    background-color: #fc2c03;
+    background-color: #333;
     font-family: 'Play', sans-serif;
-    color: #e5e5e5;
+    color: #ffffff;
     display: flex;
     margin: auto;
     justify-content: center;
     padding: 50px;
     font-size: 25px;
     line-height: 2;
-    text-shadow: 5px 5px 5px #000
+    text-shadow: 6px 6px 6px rgb(0, 0, 0)
+}
+
+.pokebutton {
+    background-color: #4e4e4e;
+    font-family: 'Play', sans-serif;
+    color: #fff;
+    padding: 16px 32px;
+    text-align: left;
+    display: inline-block;
+    margin: 4px 2px;
+    line-height: 1.5;
+    font-size: 25px;
+    border: 2px solid #c90303;
+    cursor: pointer;
 }
